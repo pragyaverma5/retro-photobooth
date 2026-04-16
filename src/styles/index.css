@@ -1,0 +1,364 @@
+/* ================= ROOT ================= */
+:root {
+  --cream: #eae6dd;
+  --dark: #1e1a17;
+  --accent: #6b4f3a;
+  --strip: #f5f0e8;
+}
+
+/* ================= GLOBAL ================= */
+body {
+  margin: 0;
+  background: var(--cream);
+  font-family: 'DM Mono', monospace;
+  color: var(--dark);
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+.landing h1 {
+  animation: fadeUp 0.8s ease;
+}
+
+.landing p {
+  animation: fadeUp 1.2s ease;
+}
+
+.start-btn {
+  animation: fadeUp 1.6s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--cream);
+
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--dark);
+  opacity: 0.6;
+  transition: 0.2s;
+}
+
+.navbar a:hover {
+  opacity: 1;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #f5f0e8;
+  padding: 30px;
+  border-radius: 12px;
+  width: 320px;
+}
+
+/* ================= LANDING ================= */
+.landing {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+/* BUTTON BASE */
+button {
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(2px) scale(0.97);
+}
+
+/* START BUTTON */
+.start-btn {
+  background: #2a211a;
+  color: #f5f0e8;
+  border-radius: 30px;
+  padding: 12px 28px;
+  font-size: 14px;
+  box-shadow: 0 6px 0 #1a140f;
+}
+
+.start-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 0 #1a140f;
+}
+
+.start-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #1a140f;
+}
+
+.start-btn,
+.capture-btn,
+.download-btn {
+  box-shadow: 0 6px 0 #1a140f;
+}
+
+.start-btn:active,
+.capture-btn:active,
+.download-btn:active {
+  box-shadow: 0 2px 0 #1a140f;
+}
+
+/* ================= CAMERA ================= */
+.camera-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.camera-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* CAMERA FRAME */
+.camera-card {
+  width: 600px;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 10px solid var(--strip);
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.camera-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1);
+}
+
+/* ================= COUNTDOWN ================= */
+.countdown {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 90px;
+  font-family: 'DM Mono', monospace;
+
+  color: rgba(255,255,255,0.9);
+  text-shadow: 0 0 20px rgba(0,0,0,0.6);
+
+  animation: flicker 0.3s ease;
+}
+
+@keyframes flicker {
+  0% { opacity: 0.3; transform: scale(1.2); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* FLASH */
+.flash {
+  position: absolute;
+  inset: 0;
+  background: white;
+  animation: flash 0.2s ease;
+}
+
+@keyframes flash {
+  from { opacity: 0.9; }
+  to { opacity: 0; }
+}
+
+/* ================= CAPTURE BUTTON ================= */
+.capture-btn {
+  margin-top: 20px;
+  background: #2a211a;
+  color: #f5f0e8;
+  border-radius: 30px;
+  padding: 12px 24px;
+}
+
+.capture-btn:hover {
+  background: #3a2c22;
+  transform: translateY(-2px);
+}
+
+/* ================= PHOTO COUNT ================= */
+.photo-count {
+  margin-top: 16px;
+}
+
+.photo-count button {
+  padding: 6px 14px;
+  border: 1px solid var(--dark);
+  background: transparent;
+  margin: 0 5px;
+}
+
+.photo-count button.active {
+  background: var(--dark);
+  color: white;
+}
+
+/* ================= FILTERS ================= */
+.filters {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.filter-btn {
+  font-size: 11px;
+  letter-spacing: 2px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--dark);
+  background: transparent;
+}
+
+.filter-btn:hover {
+  background: var(--dark);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background: var(--dark);
+  color: white;
+  box-shadow: inset 0 0 0 2px #f5f0e8;
+}
+
+/* ================= RESULT ================= */
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: flex start;
+  gap: 120px;
+  padding-top: 60px;
+  position: relative;
+}
+
+.result-container {
+  min-height: 80vh;              /* takes screen height */
+  display: flex;
+  justify-content: center;       /* center horizontally ✅ */
+  align-items: center;           /* center vertically ✅ */
+  padding: 20px;
+}
+
+/* RETAKE */
+.retake-btn {
+  position: fixed;
+  top: 80px;
+  left: 40px;
+
+  background: #2a211a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+/* ================= POLAROID STRIP ================= */
+.photo-strip {
+  background: var(--strip);
+  padding: 20px;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto ;
+  margin-top: 0px;
+  box-sizing: border-box;
+  transform: rotate(-4deg);
+  transform-origin: top center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+.photo-strip img {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* CAPTION */
+.strip-caption {
+  font-size: 11px;
+  font-family: 'DM Mono', monospace;
+  opacity: 0.7;
+  margin-top: 6px;
+}
+
+.strip-photo {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  border: 6px solid white;
+}
+
+/* DOWNLOAD */
+.download-btn {
+  margin-top: 60px;
+  background: #2a211a;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  text-align: center;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  opacity: 0.7;
+}
+
+.footer a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer a:hover {
+  opacity: 1;
+}
