@@ -1,16 +1,85 @@
-# React + Vite
+# 📸 RetroSnap Studio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A retro-inspired photobooth web application that allows users to capture moments with real-time filters and generate aesthetic photostrips.
 
-Currently, two official plugins are available:
+🌐 **Live Demo:** https://retrosnap-studio.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+RetroSnap Studio recreates the experience of a classic photobooth in a modern web interface.
+Users can capture multiple shots with a countdown, apply filters, and receive a stylized photostrip instantly.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+* Real-time camera preview with mirror effect
+* Multi-shot capture (3 or 4 frames)
+* Filter options (Black & White, Sepia, Vintage, etc.)
+* Automatic photostrip generation
+* Countdown timer with flash effect
+* Responsive design for mobile and desktop
+
+---
+
+## Tech Stack
+
+* **Frontend:** React (Vite)
+* **Languages:** JavaScript, HTML, CSS
+* **Deployment:** Vercel
+
+---
+
+## Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/pragyaverma5/retrosnap-studio.git
+cd retrosnap-studio
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run the development server
+
+```bash
+npm run dev
+```
+
+---
+
+## Usage
+
+1. Open the application
+2. Enter the studio
+3. Select number of shots and filter
+4. Start capture (countdown begins automatically)
+5. View the generated photostrip
+
+---
+
+## Future Enhancements
+
+* Custom caption support
+* Theme customization
+* Social sharing features
+
+---
+
+## Author
+
+**Pragya Verma**
+GitHub: https://github.com/pragyaverma5
+
+---
+
+## License
+
+This project is open-source and available under the MIT License.
