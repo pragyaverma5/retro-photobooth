@@ -76,6 +76,7 @@ npm run dev
 ## Author
 
 **Pragya Verma**
+
 GitHub: https://github.com/pragyaverma5
 
 ---
