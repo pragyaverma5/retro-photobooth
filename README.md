@@ -6,6 +6,16 @@ A retro-inspired photobooth web application that allows users to capture moments
 
 ---
 
+##Preview
+
+<img width="1919" height="1115" alt="image" src="https://github.com/user-attachments/assets/d7412ee3-ea23-4800-a47a-c36acb9ddd9b" />
+
+<img width="1919" height="1150" alt="image" src="https://github.com/user-attachments/assets/b17fcf23-8d45-4ffc-a310-de6db8770d8d" />
+
+<img width="1901" height="1199" alt="image" src="https://github.com/user-attachments/assets/42a56651-b916-42f0-b267-5197e91a6d26" />
+
+---
+
 ## Overview
 
 RetroSnap Studio recreates the experience of a classic photobooth in a modern web interface.
