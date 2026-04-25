@@ -6,7 +6,7 @@ A retro-inspired photobooth web application that allows users to capture moments
 
 ---
 
-##Preview
+## Preview
 
 <img width="1919" height="1115" alt="image" src="https://github.com/user-attachments/assets/d7412ee3-ea23-4800-a47a-c36acb9ddd9b" />
 
