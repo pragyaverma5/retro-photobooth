@@ -1,8 +1,8 @@
-# 📸 RetroSnap Studio
+#  RetroSnap Studio
 
 A retro-inspired photobooth web application that allows users to capture moments with real-time filters and generate aesthetic photostrips.
 
-🌐 **Live Demo:** https://retrosnap-studio.vercel.app
+ **Live Demo:** https://retrosnap-studio.vercel.app
 
 ---
 
