@@ -83,10 +83,6 @@ npm run dev
 
 ---
 
-GitHub: https://github.com/pragyaverma5
-
----
-
 ## License
 
 This project is open-source and available under the MIT License.
