@@ -80,6 +80,8 @@ npm run dev
 * Custom caption support
 * Theme customization
 * Social sharing features
+* Cool Stickers
+* Live Filters
 
 ---
 
